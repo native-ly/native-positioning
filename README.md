@@ -1,32 +1,28 @@
-# [React Native TypeScript npm starter](https://github.com/the-mes/react-native-typescript-npm-starter)
+# [Native Positioning](https://github.com/native-ly/native-positioning)
 
-[![NPM version](https://img.shields.io/npm/v/react-native-typescript-npm-starter?style=flat-square)](https://www.npmjs.com/package/react-native-typescript-npm-starter)
-[![NPM downloads](https://img.shields.io/npm/dm/react-native-typescript-npm-starter?style=flat-square)](https://www.npmjs.com/package/react-native-typescript-npm-starter)
-[![NPM license](https://img.shields.io/npm/l/react-native-typescript-npm-starter?style=flat-square)](https://www.npmjs.com/package/react-native-typescript-npm-starter)
+[![NPM version](https://img.shields.io/npm/v/native-positioning?style=flat-square)](https://www.npmjs.com/package/native-positioning)
+[![NPM downloads](https://img.shields.io/npm/dm/native-positioning?style=flat-square)](https://www.npmjs.com/package/native-positioning)
+[![NPM license](https://img.shields.io/npm/l/native-positioning?style=flat-square)](https://www.npmjs.com/package/native-positioning)
 [![run in expo snack](https://img.shields.io/badge/Run%20in%20Snack-4630EB?style=flat-square&logo=EXPO&labelColor=FFF&logoColor=000)](https://snack.expo.io/<EXPO_ACCOUNT_HERE>/<SNACK_NAME_HERE>)
-[![Codecov](https://img.shields.io/codecov/c/github/the-mes/react-native-typescript-npm-starter?style=flat-square)](https://codecov.io/gh/the-mes/react-native-typescript-npm-starter)
-[![Travis](https://img.shields.io/travis/the-mes/react-native-typescript-npm-starter/master?style=flat-square)](https://travis-ci.org/the-mes/react-native-typescript-npm-starter)
+[![Codecov](https://img.shields.io/codecov/c/github/native-ly/native-positioning?style=flat-square)](https://codecov.io/gh/native-ly/native-positioning)
+[![Travis](https://img.shields.io/travis/native-ly/native-positioning/master?style=flat-square)](https://travis-ci.org/native-ly/native-positioning)
 
 ## About
 
-Template for React Native TypeScript library
-
-### Alternatives
-
-- [Alternative Project](https://example.com/) by [John Doe](https://example.com/)
+<!-- TODO -->
 
 ## How to Install
 
 First, install the library in your project by npm:
 
 ```sh
-$ npm install react-native-typescript-npm-starter
+$ npm install native-positioning
 ```
 
 Or Yarn:
 
 ```sh
-$ yarn add react-native-typescript-npm-starter
+$ yarn add native-positioning
 ```
 
 ## Getting Started
@@ -35,18 +31,10 @@ $ yarn add react-native-typescript-npm-starter
 
 ```js
 // TODO
-import {} from 'react-native-typescript-npm-starter'
+import {} from 'native-positioning'
 ```
 
 ## Options
-
-### Stack
-
-Stack extends ViewProps
-
-| **name**      | **type**                                                                                    | **description** |
-| ------------- | ------------------------------------------------------------------------------------------- | --------------- |
-|        |  |                 |
 
 ## Example
 

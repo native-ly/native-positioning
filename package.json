@@ -1,7 +1,7 @@
 {
-  "name": "react-native-typescript-npm-starter",
+  "name": "native-positioning",
   "version": "1.0.0",
-  "description": "Template for React Native TypeScript library",
+  "description": "<TODO>",
   "author": "Jakub Biesiada",
   "license": "MIT",
   "main": "lib/index.js",
@@ -20,23 +20,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/the-mes/react-native-typescript-npm-starter.git"
+    "url": "https://github.com/native-ly/native-positioning.git"
   },
   "keywords": [
-    "template",
-    "boilerplate",
-    "library",
-    "mobile",
-    "typescript",
-    "react-native",
-    "component",
-    "starter",
-    "expo"
+    "<TODO>"
   ],
   "bugs": {
-    "url": "https://github.com/the-mes/react-native-typescript-npm-starter/issues"
+    "url": "https://github.com/native-ly/native-positioning/issues"
   },
-  "homepage": "https://github.com/the-mes/react-native-typescript-npm-starter#readme",
+  "homepage": "https://github.com/native-ly/native-positioning#readme",
   "devDependencies": {
     "@testing-library/jest-native": "^3.4.3",
     "@testing-library/react-native": "^7.1.0",

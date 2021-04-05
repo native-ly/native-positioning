@@ -1,7 +1,5 @@
-# React Native TypeScript npm starter Changelog
+# Native Positioning Changelog
 
-## 1.0.0 (2020-02-02)
+## 1.0.0 (Soon)
 
 ### Features
-
-- added ``, `` components
