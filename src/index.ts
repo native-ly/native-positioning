@@ -14,7 +14,7 @@ const typeSafeSize = (size: SingleSize) => {
   return size
 }
 
-export function positioning(...params: Size) {
+export const positioning = (...params: Size) => {
   switch (params.length) {
     case 1: {
       const all = typeSafeSize(params[0])
@@ -64,19 +64,3 @@ export function positioning(...params: Size) {
     }
   }
 }
-
-// positioning(5, 5)
-// positioning(5, 5, 4)
-// positioning(1, 5, 5, 4)
-
-// positioning({
-//   horizontal: 5,
-//   vertical: 4,
-// })
-
-// positioning({
-//   left: 5,
-//   right: 4,
-//   top: 3,
-//   bottom: 4,
-// })
