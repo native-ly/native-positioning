@@ -139,7 +139,8 @@ describe('positioning', () => {
     expect(positioning(...params)).toEqual(expected)
   })
 
-  it('', () => {
+  // TODO
+  it('should', () => {
     expect(positioning(...([40, 30, 20, 10, 0] as any))).toThrow()
   })
 })
