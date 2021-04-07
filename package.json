@@ -1,7 +1,7 @@
 {
   "name": "native-positioning",
-  "version": "1.0.0",
-  "description": "<TODO>",
+  "version": "0.0.0",
+  "description": "Set positioning for React Native component in one line of code",
   "author": "Jakub Biesiada",
   "license": "MIT",
   "main": "lib/index.js",
@@ -23,7 +23,18 @@
     "url": "https://github.com/native-ly/native-positioning.git"
   },
   "keywords": [
-    "<TODO>"
+    "react",
+    "utility",
+    "react-native",
+    "functions",
+    "style",
+    "vertical",
+    "horizontal",
+    "top",
+    "positioning",
+    "bottom",
+    "right",
+    "left"
   ],
   "bugs": {
     "url": "https://github.com/native-ly/native-positioning/issues"
