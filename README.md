@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/native-positioning?style=flat-square)](https://www.npmjs.com/package/native-positioning)
 [![NPM downloads](https://img.shields.io/npm/dm/native-positioning?style=flat-square)](https://www.npmjs.com/package/native-positioning)
 [![NPM license](https://img.shields.io/npm/l/native-positioning?style=flat-square)](https://www.npmjs.com/package/native-positioning)
-[![run in expo snack](https://img.shields.io/badge/Run%20in%20Snack-4630EB?style=flat-square&logo=EXPO&labelColor=FFF&logoColor=000)](https://snack.expo.io/<EXPO_ACCOUNT_HERE>/<SNACK_NAME_HERE>)
+[![run in expo snack](https://img.shields.io/badge/Run%20in%20Snack-4630EB?style=flat-square&logo=EXPO&labelColor=FFF&logoColor=000)](https://snack.expo.io/@jbiesiada/native-positioning)
 [![Codecov](https://img.shields.io/codecov/c/github/native-ly/native-positioning?style=flat-square)](https://codecov.io/gh/native-ly/native-positioning)
 [![Travis](https://img.shields.io/travis/native-ly/native-positioning/master?style=flat-square)](https://travis-ci.org/native-ly/native-positioning)
 
