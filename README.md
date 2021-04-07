@@ -9,7 +9,7 @@
 
 ## About
 
-<!-- TODO -->
+Set positioning for React Native component in one line of code
 
 ## How to Install
 
