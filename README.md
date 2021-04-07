@@ -30,8 +30,7 @@ $ yarn add native-positioning
 **• Connect libary with project using ES6 import:**
 
 ```js
-// TODO
-import {} from 'native-positioning'
+import { positioning } from 'native-positioning'
 ```
 
 ## Options
