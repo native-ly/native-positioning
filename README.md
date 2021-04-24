@@ -35,10 +35,36 @@ import { positioning } from 'native-positioning'
 
 ## Options
 
+You can use functions with next combinations:
+
+- `(all)`
+- `(vertical, horizontal)`
+- `(top, horizontal, bottom)`
+- `(top, right, bottom, left)`
+
+All params are `number` or `string` type
+
 ## Example
 
 ```jsx
-// TODO
+import React from 'react'
+import { View } from 'react-native'
+import { positioning } from 'native-positioning'
+
+const App = () => {
+  return (
+    <View
+      style={{
+        backgroundColor: 'red',
+        ...positioning(0, 20, 15),
+        // top: 0,
+        // right: 20,
+        // bottom: 15,
+        // left: 20,
+      }}
+    />
+  )
+}
 ```
 
 ## License

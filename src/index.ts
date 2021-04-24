@@ -1,3 +1,5 @@
+import { FlexStyle } from 'react-native'
+
 export type SingleSize = number | string
 
 export type Size =
@@ -6,18 +8,10 @@ export type Size =
   | [top: SingleSize, horizontal: SingleSize, bottom: SingleSize]
   | [top: SingleSize, right: SingleSize, bottom: SingleSize, left: SingleSize]
 
-const typeSafeSize = (size: SingleSize) => {
-  if (typeof size === 'string') {
-    return parseFloat(size)
-  }
-
-  return size
-}
-
-export const positioning = (...params: Size) => {
+export const positioning = (...params: Size): FlexStyle => {
   switch (params.length) {
     case 1: {
-      const all = typeSafeSize(params[0])
+      const all = params[0]
 
       return {
         top: all,
@@ -28,8 +22,8 @@ export const positioning = (...params: Size) => {
     }
 
     case 2: {
-      const vertical = typeSafeSize(params[0])
-      const horizontal = typeSafeSize(params[1])
+      const vertical = params[0]
+      const horizontal = params[1]
 
       return {
         top: vertical,
@@ -40,22 +34,22 @@ export const positioning = (...params: Size) => {
     }
 
     case 3: {
-      const horizontal = typeSafeSize(params[1])
+      const horizontal = params[1]
 
       return {
-        top: typeSafeSize(params[0]),
+        top: params[0],
         right: horizontal,
-        bottom: typeSafeSize(params[2]),
+        bottom: params[2],
         left: horizontal,
       }
     }
 
     case 4: {
       return {
-        top: typeSafeSize(params[0]),
-        right: typeSafeSize(params[1]),
-        bottom: typeSafeSize(params[2]),
-        left: typeSafeSize(params[3]),
+        top: params[0],
+        right: params[1],
+        bottom: params[2],
+        left: params[3],
       }
     }
 
