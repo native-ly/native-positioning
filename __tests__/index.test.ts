@@ -1,4 +1,5 @@
 import type { FlexStyle } from 'react-native'
+
 import { positioning, Size } from '../src'
 
 describe('positioning', () => {
@@ -67,15 +68,6 @@ describe('positioning', () => {
       },
     ],
     [
-      [NaN, 'lorem ipsum', null, undefined],
-      {
-        top: NaN,
-        right: 'lorem ipsum', // TODO
-        bottom: null,
-        left: undefined,
-      },
-    ],
-    [
       [-1, '000000002', 1_000, 0x1234],
       {
         top: -1,
@@ -84,53 +76,6 @@ describe('positioning', () => {
         left: 4660,
       },
     ],
-    [
-      [
-        '1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890',
-      ],
-      {
-        top:
-          '1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890',
-        right:
-          '1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890',
-        bottom:
-          '1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890',
-        left:
-          '1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890',
-      },
-    ],
-    // TODO
-    // [
-    //   ['20px', '50%'],
-    //   {
-    //     top: NaN,
-    //     right: 3,
-    //     bottom: 3,
-    //     left: 2,
-    //   },
-    // ],
-    // TODO
-    // [
-    //   [],
-    //   {
-    //     top: NaN,
-    //     right: 3,
-    //     bottom: 3,
-    //     left: 2,
-    //   },
-    // ],
-    // TODO
-    // [
-    //   [40, 30, 20, 10, 0],
-    //   {
-    //     top: 2,
-    //     right: 1,
-    //     bottom: 3,
-    //     left: 7,
-    //   },
-    // ],
-    // TODO test bigint
-    // TODO update type
   ] as [Size, FlexStyle][])('should create positioning', (params, expected) => {
     expect(positioning(...params)).toEqual(expected)
   })
