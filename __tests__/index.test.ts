@@ -76,7 +76,7 @@ describe('positioning', () => {
         left: 4660,
       },
     ],
-  ] as [Size, FlexStyle][])('should create positioning', (params, expected) => {
+  ] as [Size, FlexStyle][])('should create positioning for %j', (params, expected) => {
     expect(positioning(...params)).toEqual(expected)
   })
 
