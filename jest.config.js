@@ -5,7 +5,6 @@ module.exports = {
   transform: {
     '^.+\\.ts?$': 'ts-jest',
   },
-  moduleFileExtensions: ['tsx', ...defaults.moduleFileExtensions],
   globals: {
     'ts-jest': {
       babelConfig: true,
