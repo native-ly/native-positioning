@@ -1,6 +1,6 @@
 {
   "name": "native-positioning",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set positioning for React Native component in one line of code",
   "author": "Jakub Biesiada",
   "license": "MIT",
