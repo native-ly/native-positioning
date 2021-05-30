@@ -53,8 +53,7 @@ export const positioning = (...params: Size): FlexStyle => {
       }
     }
 
-    default: {
+    default:
       throw new Error('Unsupported position value')
-    }
   }
 }
