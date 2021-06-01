@@ -9,9 +9,15 @@ export type Size =
   | [top: SingleSize, right: SingleSize, bottom: SingleSize, left: SingleSize]
 
 export const positioning = (...params: Size): FlexStyle => {
+  const unsupportedValues = [null, undefined, NaN, false, true, ''] as any
+
   switch (params.length) {
     case 1: {
       const all = params[0]
+
+      if (unsupportedValues.includes(all)) {
+        return {}
+      }
 
       return {
         top: all,
@@ -25,32 +31,59 @@ export const positioning = (...params: Size): FlexStyle => {
       const vertical = params[0]
       const horizontal = params[1]
 
-      return {
-        top: vertical,
-        right: horizontal,
-        bottom: vertical,
-        left: horizontal,
+      let sizes = {} as FlexStyle
+
+      if (!unsupportedValues.includes(vertical)) {
+        sizes = { ...sizes, top: vertical, bottom: vertical }
       }
+
+      if (!unsupportedValues.includes(horizontal)) {
+        sizes = { ...sizes, right: horizontal, left: horizontal }
+      }
+
+      return sizes
     }
 
     case 3: {
       const horizontal = params[1]
 
-      return {
-        top: params[0],
-        right: horizontal,
-        bottom: params[2],
-        left: horizontal,
+      let sizes = {} as FlexStyle
+
+      if (!unsupportedValues.includes(params[0])) {
+        sizes = { ...sizes, top: params[0] }
       }
+
+      if (!unsupportedValues.includes(horizontal)) {
+        sizes = { ...sizes, right: horizontal, left: horizontal }
+      }
+
+      if (!unsupportedValues.includes(params[2])) {
+        sizes = { ...sizes, bottom: params[2] }
+      }
+
+      return sizes
     }
 
     case 4: {
-      return {
-        top: params[0],
-        right: params[1],
-        bottom: params[2],
-        left: params[3],
+      let sizes = {} as FlexStyle
+
+      if (!unsupportedValues.includes(params[0])) {
+        sizes = { ...sizes, top: params[0] }
       }
+
+      if (!unsupportedValues.includes(params[1])) {
+        sizes = { ...sizes, right: params[1] }
+      }
+
+      if (!unsupportedValues.includes(params[2])) {
+        sizes = { ...sizes, bottom: params[2] }
+      }
+
+      if (!unsupportedValues.includes(params[3])) {
+        sizes = { ...sizes, left: params[3] }
+      }
+
+      return sizes
     }
 
     default:

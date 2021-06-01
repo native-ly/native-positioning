@@ -76,6 +76,40 @@ describe('positioning', () => {
         left: 4660,
       },
     ],
+    [
+      [undefined, null, 12] as any,
+      {
+        bottom: 12,
+      },
+    ],
+    [
+      [15, 10, undefined] as any,
+      {
+        top: 15,
+        right: 10,
+        left: 10,
+      },
+    ],
+    [[undefined, null, null, null] as any, {}],
+    [
+      ['20', undefined] as any,
+      {
+        top: '20',
+        bottom: '20',
+      },
+    ],
+    [
+      [null, 0] as any,
+      {
+        right: 0,
+        left: 0,
+      },
+    ],
+    [
+      ['', false, true, NaN] as any,
+      {},
+    ],
+    [[null] as any, {}],
   ] as [Size, FlexStyle][])('should create positioning for %j', (params, expected) => {
     expect(positioning(...params)).toEqual(expected)
   })
