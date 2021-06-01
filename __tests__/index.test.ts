@@ -105,14 +105,14 @@ describe('positioning', () => {
         left: 0,
       },
     ],
-    [
-      ['', false, true, NaN] as any,
-      {},
-    ],
+    [['', false, true, NaN] as any, {}],
     [[null] as any, {}],
-  ] as [Size, FlexStyle][])('should create positioning for %j', (params, expected) => {
-    expect(positioning(...params)).toEqual(expected)
-  })
+  ] as [Size, FlexStyle][])(
+    'should create positioning for %j',
+    (params, expected) => {
+      expect(positioning(...params)).toEqual(expected)
+    }
+  )
 
   it('should throw error for not supported params', () => {
     try {
