@@ -2,6 +2,11 @@ import type { FlexStyle } from 'react-native'
 
 import { positioning, Size } from '../src'
 
+interface TestCase {
+  readonly params: Size
+  readonly expected: FlexStyle
+}
+
 describe('positioning', () => {
   it.each([
     {
@@ -76,8 +81,7 @@ describe('positioning', () => {
         left: 4660,
       },
     },
-    // TODO update type
-  ] as { params: Size; expected: FlexStyle }[])(
+  ] as TestCase[])(
     'should create positioning for $params',
     ({ params, expected }) => {
       expect(positioning(...params)).toEqual(expected)
