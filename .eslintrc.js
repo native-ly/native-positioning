@@ -5,15 +5,13 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:react/recommended',
   ],
-  plugins: ['prettier', 'react-native'],
+  plugins: ['prettier'],
   env: {
     'react-native/react-native': true,
     node: true,
     jest: true,
   },
   rules: {
-    'react-native/no-unused-styles': 'error',
-    'react-native/split-platform-components': 'error',
     'react/prop-types': 'off',
     'no-unused-vars': 'off',
   },
