@@ -27,7 +27,7 @@ $ yarn add native-positioning
 
 ## Getting Started
 
-**• Connect libary with project using ES6 import:**
+**• Connect library with project using ES6 import:**
 
 ```js
 import { positioning } from 'native-positioning'
