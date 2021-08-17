@@ -9,7 +9,7 @@
 
 ## About
 
-Set positioning for React Native component in one line of code
+Set the positioning of the React Native component in one line of code
 
 ## How to Install
 
@@ -27,7 +27,7 @@ $ yarn add native-positioning
 
 ## Getting Started
 
-**• Connect library with project using ES6 import:**
+**Connect the library with the project using ES6 import:**
 
 ```js
 import { positioning } from 'native-positioning'
@@ -35,7 +35,7 @@ import { positioning } from 'native-positioning'
 
 ## Options
 
-You can use functions with next combinations:
+You can use the functions with the following combinations:
 
 - `(all)`
 - `(vertical, horizontal)`

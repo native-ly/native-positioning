@@ -4,4 +4,4 @@
 
 ### Features
 
-- added `positioning` function
+- added the `positioning` function
