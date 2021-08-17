@@ -1,11 +1,12 @@
 # [Native Positioning](https://github.com/native-ly/native-positioning)
 
-[![NPM version](https://img.shields.io/npm/v/native-positioning?style=flat-square)](https://www.npmjs.com/package/native-positioning)
-[![NPM downloads](https://img.shields.io/npm/dm/native-positioning?style=flat-square)](https://www.npmjs.com/package/native-positioning)
-[![NPM license](https://img.shields.io/npm/l/native-positioning?style=flat-square)](https://www.npmjs.com/package/native-positioning)
+[![NPM version](https://flat.badgen.net/npm/v/native-positioning)](https://www.npmjs.com/package/native-positioning)
+[![NPM downloads](https://flat.badgen.net/npm/dm/native-positioning)](https://www.npmjs.com/package/native-positioning)
+[![NPM license](https://flat.badgen.net/npm/license/native-positioning)](https://www.npmjs.com/package/native-positioning)
 [![run in expo snack](https://img.shields.io/badge/Run%20in%20Snack-4630EB?style=flat-square&logo=EXPO&labelColor=FFF&logoColor=000)](https://snack.expo.io/@jbiesiada/native-positioning)
-[![Codecov](https://img.shields.io/codecov/c/github/native-ly/native-positioning?style=flat-square)](https://codecov.io/gh/native-ly/native-positioning)
-[![Travis](https://img.shields.io/travis/com/native-ly/native-positioning/main?style=flat-square)](https://travis-ci.com/native-ly/native-positioning)
+[![Codecov](https://flat.badgen.net/codecov/c/github/native-ly/native-positioning)](https://codecov.io/gh/native-ly/native-positioning)
+[![Travis](https://flat.badgen.net/travis/native-ly/native-positioning)](https://travis-ci.com/native-ly/native-positioning)
+[![Bundle size](https://flat.badgen.net/packagephobia/install/native-positioning)](https://packagephobia.com/result?p=native-positioning)
 
 ## About
 
