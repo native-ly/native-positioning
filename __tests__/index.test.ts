@@ -90,7 +90,7 @@ describe('positioning', () => {
     }
   )
 
-  it('should throw error for not supported params', () => {
+  it('should throw an error for not supported params', () => {
     try {
       positioning(...([40, 30, 20, 10, 0] as any))
     } catch (e) {
