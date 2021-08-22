@@ -93,8 +93,8 @@ describe('positioning', () => {
   it('should throw an error for not supported params', () => {
     try {
       positioning(...([40, 30, 20, 10, 0] as any))
-    } catch (e) {
-      expect(e.message).toBe('Unsupported position value')
+    } catch (err) {
+      expect(err.message).toBe('Unsupported position value')
     }
   })
 })
