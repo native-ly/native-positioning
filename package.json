@@ -26,8 +26,12 @@
   },
   "keywords": [
     "react",
+    "android",
+    "ios",
     "utility",
+    "mobile",
     "react-native",
+    "web",
     "functions",
     "style",
     "vertical",
@@ -36,6 +40,7 @@
     "positioning",
     "bottom",
     "right",
+    "expo",
     "left"
   ],
   "bugs": {
