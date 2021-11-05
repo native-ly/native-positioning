@@ -11,7 +11,6 @@ export type Size =
 export const positioning = (...params: Size): FlexStyle => {
   switch (params.length) {
     case 1: {
-      // TODO? rename all to insets
       const [all] = params
 
       return {
