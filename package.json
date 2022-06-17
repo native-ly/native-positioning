@@ -7,13 +7,13 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "prepack": "npm run prettier && npm run lint && npm run build",
+    "prepack": "yarn prettier && yarn lint && yarn build",
     "clean": "rimraf lib/*",
     "build": "tsc",
-    "prebuild": "npm run clean",
+    "prebuild": "yarn clean",
     "test": "jest --coverage",
-    "watch": "npm run build -- --watch",
-    "watch:test": "npm run test -- --watch",
+    "watch": "yarn build -- --watch",
+    "watch:test": "yarn test -- --watch",
     "lint": "eslint --fix 'src/**/*.ts'",
     "prettier": "prettier --write 'src/**/*.ts'",
     "commit": "git-cz",
@@ -84,8 +84,8 @@
   },
   "lint-staged": {
     "src/**/*.ts": [
-      "npm run prettier",
-      "npm run lint"
+      "yarn prettier",
+      "yarn lint"
     ]
   }
 }
