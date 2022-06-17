@@ -8,10 +8,10 @@ export type Size =
   | [top: SingleSize, horizontal: SingleSize, bottom: SingleSize]
   | [top: SingleSize, right: SingleSize, bottom: SingleSize, left: SingleSize]
 
-export const positioning = (...params: Size): FlexStyle => {
-  switch (params.length) {
+export const positioning = (...size: Size): FlexStyle => {
+  switch (size.length) {
     case 1: {
-      const [all] = params
+      const [all] = size
 
       return {
         top: all,
@@ -22,7 +22,7 @@ export const positioning = (...params: Size): FlexStyle => {
     }
 
     case 2: {
-      const [vertical, horizontal] = params
+      const [vertical, horizontal] = size
 
       return {
         top: vertical,
@@ -33,7 +33,7 @@ export const positioning = (...params: Size): FlexStyle => {
     }
 
     case 3: {
-      const [top, horizontal, bottom] = params
+      const [top, horizontal, bottom] = size
 
       return {
         top,
@@ -44,7 +44,7 @@ export const positioning = (...params: Size): FlexStyle => {
     }
 
     case 4: {
-      const [top, right, bottom, left] = params
+      const [top, right, bottom, left] = size
 
       return { top, right, bottom, left }
     }
