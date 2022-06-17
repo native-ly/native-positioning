@@ -3,14 +3,14 @@ import type { FlexStyle } from 'react-native'
 import { positioning, Size } from '../src'
 
 interface TestCase {
-  readonly params: Size
-  readonly expected: FlexStyle
+  readonly size: Size
+  readonly style: FlexStyle
 }
 
 const testCases: TestCase[] = [
   {
-    params: [20],
-    expected: {
+    size: [20],
+    style: {
       top: 20,
       right: 20,
       bottom: 20,
@@ -18,8 +18,8 @@ const testCases: TestCase[] = [
     },
   },
   {
-    params: ['102'],
-    expected: {
+    size: ['102'],
+    style: {
       top: '102',
       right: '102',
       bottom: '102',
@@ -27,8 +27,8 @@ const testCases: TestCase[] = [
     },
   },
   {
-    params: [15, 20],
-    expected: {
+    size: [15, 20],
+    style: {
       top: 15,
       right: 20,
       bottom: 15,
@@ -36,8 +36,8 @@ const testCases: TestCase[] = [
     },
   },
   {
-    params: ['0', '12'],
-    expected: {
+    size: ['0', '12'],
+    style: {
       top: '0',
       right: '12',
       bottom: '0',
@@ -45,8 +45,8 @@ const testCases: TestCase[] = [
     },
   },
   {
-    params: [16, 33, 24],
-    expected: {
+    size: [16, 33, 24],
+    style: {
       top: 16,
       right: 33,
       bottom: 24,
@@ -54,8 +54,8 @@ const testCases: TestCase[] = [
     },
   },
   {
-    params: [2, 1, 3, 7],
-    expected: {
+    size: [2, 1, 3, 7],
+    style: {
       top: 2,
       right: 1,
       bottom: 3,
@@ -63,8 +63,8 @@ const testCases: TestCase[] = [
     },
   },
   {
-    params: ['3', '3', '3', '2'],
-    expected: {
+    size: ['3', '3', '3', '2'],
+    style: {
       top: '3',
       right: '3',
       bottom: '3',
@@ -72,8 +72,8 @@ const testCases: TestCase[] = [
     },
   },
   {
-    params: [-1, '000000002', 1_000, 0x1234],
-    expected: {
+    size: [-1, '000000002', 1_000, 0x1234],
+    style: {
       top: -1,
       right: '000000002',
       bottom: 1000,
@@ -85,8 +85,8 @@ const testCases: TestCase[] = [
 describe('positioning', () => {
   it.each(testCases)(
     'should create positioning for $params',
-    ({ params, expected }) => {
-      expect(positioning(...params)).toEqual(expected)
+    ({ size, style }) => {
+      expect(positioning(...size)).toEqual(style)
     }
   )
 
